@@ -21,7 +21,7 @@ struct LocationMapView: View {
         ZStack {
             Map(coordinateRegion: $region).edgesIgnoringSafeArea(.top)
             VStack {
-                Image("ddg-map-logo")
+                Image.mapLogo
                     .resizable()
                     .scaledToFit()
                     .frame(height: 70)
