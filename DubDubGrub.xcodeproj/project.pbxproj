@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		83A360AF2AE74E80004DAB32 /* DubDubGrubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A360AE2AE74E80004DAB32 /* DubDubGrubApp.swift */; };
-		83A360B12AE74E80004DAB32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A360B02AE74E80004DAB32 /* ContentView.swift */; };
 		83A360B32AE74E81004DAB32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83A360B22AE74E81004DAB32 /* Assets.xcassets */; };
 		83A360B62AE74E81004DAB32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83A360B52AE74E81004DAB32 /* Preview Assets.xcassets */; };
+		83A360BD2AE752CA004DAB32 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A360BC2AE752CA004DAB32 /* Color+Ext.swift */; };
+		83A360BF2AE75321004DAB32 /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A360BE2AE75321004DAB32 /* AppTabView.swift */; };
+		83A360C42AE753D3004DAB32 /* LocationMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A360C32AE753D3004DAB32 /* LocationMapView.swift */; };
+		83A360C62AE753F7004DAB32 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A360C52AE753F7004DAB32 /* LocationListView.swift */; };
+		83A360C82AE7540B004DAB32 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A360C72AE7540B004DAB32 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		83A360AB2AE74E80004DAB32 /* DubDubGrub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DubDubGrub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A360AE2AE74E80004DAB32 /* DubDubGrubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DubDubGrubApp.swift; sourceTree = "<group>"; };
-		83A360B02AE74E80004DAB32 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		83A360B22AE74E81004DAB32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83A360B52AE74E81004DAB32 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		83A360BC2AE752CA004DAB32 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		83A360BE2AE75321004DAB32 /* AppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
+		83A360C32AE753D3004DAB32 /* LocationMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapView.swift; sourceTree = "<group>"; };
+		83A360C52AE753F7004DAB32 /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
+		83A360C72AE7540B004DAB32 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,10 @@
 		83A360AD2AE74E80004DAB32 /* DubDubGrub */ = {
 			isa = PBXGroup;
 			children = (
+				83A360C22AE75360004DAB32 /* Extensions */,
+				83A360C12AE7534B004DAB32 /* Componens */,
+				83A360C02AE7533B004DAB32 /* Containers */,
 				83A360AE2AE74E80004DAB32 /* DubDubGrubApp.swift */,
-				83A360B02AE74E80004DAB32 /* ContentView.swift */,
 				83A360B22AE74E81004DAB32 /* Assets.xcassets */,
 				83A360B42AE74E81004DAB32 /* Preview Content */,
 			);
@@ -65,6 +75,32 @@
 				83A360B52AE74E81004DAB32 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		83A360C02AE7533B004DAB32 /* Containers */ = {
+			isa = PBXGroup;
+			children = (
+				83A360BE2AE75321004DAB32 /* AppTabView.swift */,
+				83A360C32AE753D3004DAB32 /* LocationMapView.swift */,
+				83A360C52AE753F7004DAB32 /* LocationListView.swift */,
+				83A360C72AE7540B004DAB32 /* ProfileView.swift */,
+			);
+			path = Containers;
+			sourceTree = "<group>";
+		};
+		83A360C12AE7534B004DAB32 /* Componens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Componens;
+			sourceTree = "<group>";
+		};
+		83A360C22AE75360004DAB32 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				83A360BC2AE752CA004DAB32 /* Color+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83A360B12AE74E80004DAB32 /* ContentView.swift in Sources */,
 				83A360AF2AE74E80004DAB32 /* DubDubGrubApp.swift in Sources */,
+				83A360C42AE753D3004DAB32 /* LocationMapView.swift in Sources */,
+				83A360C62AE753F7004DAB32 /* LocationListView.swift in Sources */,
+				83A360BF2AE75321004DAB32 /* AppTabView.swift in Sources */,
+				83A360C82AE7540B004DAB32 /* ProfileView.swift in Sources */,
+				83A360BD2AE752CA004DAB32 /* Color+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
