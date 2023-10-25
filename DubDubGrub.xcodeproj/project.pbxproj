@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		831EE15F2AE9C6E100D921EC /* SpotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831EE15E2AE9C6E100D921EC /* SpotView.swift */; };
+		831EE1612AE9C99800D921EC /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831EE1602AE9C99800D921EC /* AvatarView.swift */; };
 		83A360AF2AE74E80004DAB32 /* DubDubGrubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A360AE2AE74E80004DAB32 /* DubDubGrubApp.swift */; };
 		83A360B32AE74E81004DAB32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83A360B22AE74E81004DAB32 /* Assets.xcassets */; };
 		83A360B62AE74E81004DAB32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83A360B52AE74E81004DAB32 /* Preview Assets.xcassets */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		831EE15E2AE9C6E100D921EC /* SpotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotView.swift; sourceTree = "<group>"; };
+		831EE1602AE9C99800D921EC /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		83A360AB2AE74E80004DAB32 /* DubDubGrub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DubDubGrub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A360AE2AE74E80004DAB32 /* DubDubGrubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DubDubGrubApp.swift; sourceTree = "<group>"; };
 		83A360B22AE74E81004DAB32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,6 +97,8 @@
 		83A360C12AE7534B004DAB32 /* Componens */ = {
 			isa = PBXGroup;
 			children = (
+				831EE15E2AE9C6E100D921EC /* SpotView.swift */,
+				831EE1602AE9C99800D921EC /* AvatarView.swift */,
 			);
 			path = Componens;
 			sourceTree = "<group>";
@@ -178,10 +184,12 @@
 			files = (
 				83A360AF2AE74E80004DAB32 /* DubDubGrubApp.swift in Sources */,
 				83A360C42AE753D3004DAB32 /* LocationMapView.swift in Sources */,
+				831EE15F2AE9C6E100D921EC /* SpotView.swift in Sources */,
 				83A360C62AE753F7004DAB32 /* LocationListView.swift in Sources */,
 				83A360BF2AE75321004DAB32 /* AppTabView.swift in Sources */,
 				83D327482AE75D83002D5E6F /* Image+Ext.swift in Sources */,
 				83A360C82AE7540B004DAB32 /* ProfileView.swift in Sources */,
+				831EE1612AE9C99800D921EC /* AvatarView.swift in Sources */,
 				83A360BD2AE752CA004DAB32 /* Color+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

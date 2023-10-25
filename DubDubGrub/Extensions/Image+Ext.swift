@@ -9,4 +9,6 @@ import SwiftUI
 
 extension Image {
     static let mapLogo = Image("ddg-map-logo")
+    static let defaultAvatar = Image("default-avatar")
+    static let darkLogo = Image("default-square-asset")
 }
