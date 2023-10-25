@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct LocationListView: View {
+    @State private var showingSheet = false
+
     var body: some View {
         NavigationStack {
             List(0..<21, rowContent: { index in
                 NavigationLink {
-                    Text("Location detail \(index)")
+                    LocationDetailView()
                 } label: {
-                SpotView()
+                    SpotView()
                 }.listRowSeparator(.hidden)
                 .listRowInsets(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
                 Divider()

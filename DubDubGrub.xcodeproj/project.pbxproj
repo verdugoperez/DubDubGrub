@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		830D61392AE9CBEF00E1E099 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830D61382AE9CBEF00E1E099 /* LocationDetailView.swift */; };
 		831EE15F2AE9C6E100D921EC /* SpotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831EE15E2AE9C6E100D921EC /* SpotView.swift */; };
 		831EE1612AE9C99800D921EC /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831EE1602AE9C99800D921EC /* AvatarView.swift */; };
 		83A360AF2AE74E80004DAB32 /* DubDubGrubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A360AE2AE74E80004DAB32 /* DubDubGrubApp.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		830D61382AE9CBEF00E1E099 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 		831EE15E2AE9C6E100D921EC /* SpotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotView.swift; sourceTree = "<group>"; };
 		831EE1602AE9C99800D921EC /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		83A360AB2AE74E80004DAB32 /* DubDubGrub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DubDubGrub.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +92,7 @@
 				83A360C32AE753D3004DAB32 /* LocationMapView.swift */,
 				83A360C52AE753F7004DAB32 /* LocationListView.swift */,
 				83A360C72AE7540B004DAB32 /* ProfileView.swift */,
+				830D61382AE9CBEF00E1E099 /* LocationDetailView.swift */,
 			);
 			path = Containers;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				83D327482AE75D83002D5E6F /* Image+Ext.swift in Sources */,
 				83A360C82AE7540B004DAB32 /* ProfileView.swift in Sources */,
 				831EE1612AE9C99800D921EC /* AvatarView.swift in Sources */,
+				830D61392AE9CBEF00E1E099 /* LocationDetailView.swift in Sources */,
 				83A360BD2AE752CA004DAB32 /* Color+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
