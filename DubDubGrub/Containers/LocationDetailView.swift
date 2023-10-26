@@ -66,6 +66,7 @@ struct LocationDetailView: View {
                                 Text("Name")
                                     .bold()
                                     .lineLimit(1)
+                                    .minimumScaleFactor(0.75)
                             }
                         }
                     }
