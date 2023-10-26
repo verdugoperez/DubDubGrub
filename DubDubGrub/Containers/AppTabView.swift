@@ -10,13 +10,12 @@ import SwiftUI
 struct AppTabView: View {
     var body: some View {
         TabView {
-            LocationListView().tabItem {
-                Label("Locations", systemImage: "building")
-            }
             LocationMapView().tabItem {
                 Label("Map", systemImage: "map")
             }
-           
+            LocationListView().tabItem {
+                Label("Locations", systemImage: "building")
+            }
             ProfileView().tabItem {
                 Label("Profile", systemImage: "person")
             }

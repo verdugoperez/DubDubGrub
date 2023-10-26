@@ -24,7 +24,7 @@ struct SpotView: View {
                     .minimumScaleFactor(0.75)
                 HStack {
                     ForEach(0..<5) { indexTwo in
-                       AvatarView()
+                        AvatarView(size: 35)
                     }
                 }
             }
