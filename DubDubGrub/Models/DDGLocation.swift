@@ -17,5 +17,6 @@ struct DDGLocation: Codable, Identifiable {
     let website: String
     let phoneNumber: String
     let imageName: String?
+    let bannerImageName: String?
 }
 

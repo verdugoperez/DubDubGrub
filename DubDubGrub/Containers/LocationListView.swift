@@ -19,9 +19,9 @@ struct LocationListView: View {
             
             List(viewModel.locations, rowContent: { location in
                     NavigationLink {
-                        LocationDetailView()
+                        LocationDetailView(street: location.street, description: location.description, bannerImageName: "\(location.imageName ?? "")-banner", websiteURL: location.website)
                     } label: {
-                        SpotView(locationName: location.name, imageName: location.imageName)
+                        SpotView(locationName: location.name, imageName: "\(location.imageName ?? "")-square")
                     }.listRowSeparator(.hidden)
                     .listRowInsets(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
                     Divider()

@@ -8,10 +8,15 @@
 import SwiftUI
 
 struct AppTabView: View {
+    @State private var showOnboarding =  UserDefaults.standard.integer(forKey: "showOnboarding") == 0 ? true : false
+
+    
     var body: some View {
         TabView {
             LocationMapView().tabItem {
                 Label("Map", systemImage: "map")
+            }.sheet(isPresented: $showOnboarding) {
+                OnboardingView()
             }
             NavigationStack {
                 LocationListView().navigationTitle("Grub Spots")

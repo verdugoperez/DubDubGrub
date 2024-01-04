@@ -10,20 +10,31 @@ import SwiftUI
 struct LocationDetailView: View {
     @Environment(\.presentationMode) var presentationMode
     private let columns: [GridItem] =  [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
+    var street: String
+    var description: String
+    var bannerImageName: String?
+    var websiteURL: String
     
     var body: some View {
         VStack(spacing: 16) {
-            Image.bannerLogo
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(height: 120)
+            if let image = bannerImageName {
+                Image(image)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(height: 120)
+            } else {
+                Image.bannerLogo
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(height: 120)
+            }
             HStack {
-                Label("123 Main Street", systemImage: "mappin.and.ellipse")
+                Label(street, systemImage: "mappin.and.ellipse")
                     .font(.caption)
                     .foregroundColor(.secondary)
                 Spacer()
             }.padding(.horizontal)
-            Text("This is a test description. This is a test description. This is a test description. This is a test description. This is a test description. This is a test description. This is a test description. This is a test description.")
+            Text(description)
                 .lineLimit(3)
                 .minimumScaleFactor(0.75)
                 .padding(.horizontal)
@@ -37,9 +48,7 @@ struct LocationDetailView: View {
                     } label: {
                         LocationActionButton(backgroundColor: .brandPrimary, imageName: "location.fill")
                     }
-                    Button {
-                        
-                    } label: {
+                    Link(destination: URL(string: websiteURL)!) {
                         LocationActionButton(backgroundColor: .brandPrimary, imageName: "network")
                     }
                     Button {
@@ -88,6 +97,6 @@ struct LocationDetailView: View {
 
 struct LocationDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        LocationDetailView()
+        LocationDetailView(street: "Street 123", description: "description description description description", websiteURL: "")
     }
 }

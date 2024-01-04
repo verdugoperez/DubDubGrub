@@ -25,6 +25,8 @@
 		FAC80D7D2B464EE0007E061C /* NetworkRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC80D7C2B464EE0007E061C /* NetworkRequestManager.swift */; };
 		FAC80D802B464F36007E061C /* LocationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC80D7F2B464F36007E061C /* LocationListViewModel.swift */; };
 		FAC80D852B4663F8007E061C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC80D842B4663F8007E061C /* LoadingView.swift */; };
+		FAC80D872B466F5C007E061C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC80D862B466F5C007E061C /* OnboardingView.swift */; };
+		FAC80D892B467EFE007E061C /* OnboardingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC80D882B467EFE007E061C /* OnboardingItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		FAC80D7F2B464F36007E061C /* LocationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListViewModel.swift; sourceTree = "<group>"; };
 		FAC80D812B46530D007E061C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FAC80D842B4663F8007E061C /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		FAC80D862B466F5C007E061C /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		FAC80D882B467EFE007E061C /* OnboardingItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,7 @@
 				83A360C52AE753F7004DAB32 /* LocationListView.swift */,
 				83A360C72AE7540B004DAB32 /* ProfileView.swift */,
 				830D61382AE9CBEF00E1E099 /* LocationDetailView.swift */,
+				FAC80D862B466F5C007E061C /* OnboardingView.swift */,
 			);
 			path = Containers;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 				831EE1602AE9C99800D921EC /* AvatarView.swift */,
 				830D613A2AE9E1D900E1E099 /* LocationActionButton.swift */,
 				FAC80D842B4663F8007E061C /* LoadingView.swift */,
+				FAC80D882B467EFE007E061C /* OnboardingItemView.swift */,
 			);
 			path = Componens;
 			sourceTree = "<group>";
@@ -235,6 +241,7 @@
 				83A360C62AE753F7004DAB32 /* LocationListView.swift in Sources */,
 				FAC80D782B464C9E007E061C /* DDGLocation.swift in Sources */,
 				FAC80D852B4663F8007E061C /* LoadingView.swift in Sources */,
+				FAC80D892B467EFE007E061C /* OnboardingItemView.swift in Sources */,
 				83A360BF2AE75321004DAB32 /* AppTabView.swift in Sources */,
 				FAC80D7D2B464EE0007E061C /* NetworkRequestManager.swift in Sources */,
 				83D327482AE75D83002D5E6F /* Image+Ext.swift in Sources */,
@@ -244,6 +251,7 @@
 				830D61392AE9CBEF00E1E099 /* LocationDetailView.swift in Sources */,
 				83A360BD2AE752CA004DAB32 /* Color+Ext.swift in Sources */,
 				FAC80D7A2B464D1E007E061C /* DDGProfile.swift in Sources */,
+				FAC80D872B466F5C007E061C /* OnboardingView.swift in Sources */,
 				FAC80D802B464F36007E061C /* LocationListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
