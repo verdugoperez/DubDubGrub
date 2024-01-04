@@ -8,16 +8,19 @@
 import SwiftUI
 
 struct SpotView: View {
+    var locationName: String
+    var imageName: String?
+    
     var body: some View {
         HStack {
-            Image.darkLogo
-                .resizable()
-                .scaledToFit()
-                .frame(height: 80)
-                .clipShape(Circle())
-                .padding(.trailing, 5)
+            if let image = imageName {
+                Image(image).avatarStylesModifier()
+            } else {
+                Image.darkLogo.avatarStylesModifier()
+            }
+            
             VStack(alignment: .leading) {
-                Text("Test location name")
+                Text(locationName)
                     .font(.title2)
                     .fontWeight(.semibold)
                     .lineLimit(1)
@@ -34,6 +37,6 @@ struct SpotView: View {
 
 struct SpotView_Previews: PreviewProvider {
     static var previews: some View {
-        SpotView()
+        SpotView(locationName: "Test location")
     }
 }

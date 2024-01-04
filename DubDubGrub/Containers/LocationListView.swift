@@ -9,19 +9,22 @@ import SwiftUI
 
 struct LocationListView: View {
     @State private var showingSheet = false
+    @StateObject var viewModel = LocationListViewModel()
 
     var body: some View {
-        NavigationStack {
-            List(0..<21, rowContent: { index in
+        List(viewModel.locations, rowContent: { location in
                 NavigationLink {
                     LocationDetailView()
                 } label: {
-                    SpotView()
+                    SpotView(locationName: location.name, imageName: location.imageName)
                 }.listRowSeparator(.hidden)
                 .listRowInsets(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
                 Divider()
-            }).listStyle(.plain).navigationTitle("Grub Spots")
-        }
+            }).onAppear(perform: {
+                Task {
+                    await viewModel.getAppetizers()
+                }
+            }).listStyle(.plain)
     }
 }
 

@@ -19,11 +19,19 @@ struct ProfileView: View {
                     .frame(height: 100)
                     .foregroundColor(Color(.secondarySystemBackground))
                 HStack {
-                    Image.defaultAvatar
-                        .resizable()
-                        .scaledToFit()
-                        .clipShape(Circle())
-                        .frame(height: 60)
+                    ZStack {
+                        Image.defaultAvatar
+                            .resizable()
+                            .scaledToFit()
+                            .clipShape(Circle())
+                            .frame(height: 70)
+                        Image(systemName: "square.and.pencil")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 14, height: 14)
+                            .foregroundColor(.white)
+                            .offset(y: 26)
+                    }
                     VStack(alignment: .leading) {
                         Text("Sean Allen").font(.largeTitle).bold()
                         Text("YouTuber & Indie Dev")
@@ -73,6 +81,7 @@ struct ProfileView: View {
             }
         }.padding()
     }
+    
 }
 
 struct ProfileView_Previews: PreviewProvider {

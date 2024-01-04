@@ -13,10 +13,14 @@ struct AppTabView: View {
             LocationMapView().tabItem {
                 Label("Map", systemImage: "map")
             }
-            LocationListView().tabItem {
+            NavigationStack {
+                LocationListView().navigationTitle("Grub Spots")
+            }.tabItem {
                 Label("Locations", systemImage: "building")
             }
-            ProfileView().tabItem {
+            NavigationStack {
+                ProfileView().navigationTitle("Profile")
+            }.tabItem {
                 Label("Profile", systemImage: "person")
             }
         }.tint(Color.brandPrimary)
