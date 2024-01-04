@@ -9,6 +9,7 @@ import Foundation
 @MainActor
 class LocationListViewModel: ObservableObject {
     @Published var locations = [DDGLocation]()
+    @Published var isLoading = false
     
     private var networkManager: NetworkRequestManager
     
@@ -21,7 +22,8 @@ class LocationListViewModel: ObservableObject {
     }
     
     func getAppetizers() async {
-        //isLoading = true
+        isLoading = true
+        
         do {
             let url = URL(string: "http://demo6339055.mockable.io/ddglocations")!
             locations = try await networkManager.fetch(from: url, responseType: [DDGLocation].self).map { location in
@@ -30,13 +32,10 @@ class LocationListViewModel: ObservableObject {
                 
                 return locationWithId
             }
-        } catch {
-            print(error.localizedDescription)
-            /*
-            showError = true
-            errorMesage = error.localizedDescription
+            
             isLoading = false
-             */
+        } catch {
+            isLoading = false
         }
     }
 }

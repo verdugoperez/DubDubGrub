@@ -12,19 +12,25 @@ struct LocationListView: View {
     @StateObject var viewModel = LocationListViewModel()
 
     var body: some View {
-        List(viewModel.locations, rowContent: { location in
-                NavigationLink {
-                    LocationDetailView()
-                } label: {
-                    SpotView(locationName: location.name, imageName: location.imageName)
-                }.listRowSeparator(.hidden)
-                .listRowInsets(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
-                Divider()
-            }).onAppear(perform: {
-                Task {
-                    await viewModel.getAppetizers()
-                }
-            }).listStyle(.plain)
+        ZStack {
+            if viewModel.isLoading {
+                LoadingView()
+            }
+            
+            List(viewModel.locations, rowContent: { location in
+                    NavigationLink {
+                        LocationDetailView()
+                    } label: {
+                        SpotView(locationName: location.name, imageName: location.imageName)
+                    }.listRowSeparator(.hidden)
+                    .listRowInsets(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
+                    Divider()
+                }).onAppear(perform: {
+                    Task {
+                        await viewModel.getAppetizers()
+                    }
+                }).listStyle(.plain)
+        }
     }
 }
 

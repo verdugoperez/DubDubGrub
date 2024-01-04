@@ -24,6 +24,7 @@
 		FAC80D7A2B464D1E007E061C /* DDGProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC80D792B464D1E007E061C /* DDGProfile.swift */; };
 		FAC80D7D2B464EE0007E061C /* NetworkRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC80D7C2B464EE0007E061C /* NetworkRequestManager.swift */; };
 		FAC80D802B464F36007E061C /* LocationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC80D7F2B464F36007E061C /* LocationListViewModel.swift */; };
+		FAC80D852B4663F8007E061C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC80D842B4663F8007E061C /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		FAC80D7C2B464EE0007E061C /* NetworkRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestManager.swift; sourceTree = "<group>"; };
 		FAC80D7F2B464F36007E061C /* LocationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListViewModel.swift; sourceTree = "<group>"; };
 		FAC80D812B46530D007E061C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FAC80D842B4663F8007E061C /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				831EE15E2AE9C6E100D921EC /* SpotView.swift */,
 				831EE1602AE9C99800D921EC /* AvatarView.swift */,
 				830D613A2AE9E1D900E1E099 /* LocationActionButton.swift */,
+				FAC80D842B4663F8007E061C /* LoadingView.swift */,
 			);
 			path = Componens;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				831EE15F2AE9C6E100D921EC /* SpotView.swift in Sources */,
 				83A360C62AE753F7004DAB32 /* LocationListView.swift in Sources */,
 				FAC80D782B464C9E007E061C /* DDGLocation.swift in Sources */,
+				FAC80D852B4663F8007E061C /* LoadingView.swift in Sources */,
 				83A360BF2AE75321004DAB32 /* AppTabView.swift in Sources */,
 				FAC80D7D2B464EE0007E061C /* NetworkRequestManager.swift in Sources */,
 				83D327482AE75D83002D5E6F /* Image+Ext.swift in Sources */,
