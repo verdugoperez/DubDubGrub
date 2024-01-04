@@ -14,6 +14,7 @@ struct LocationDetailView: View {
     var description: String
     var bannerImageName: String?
     var websiteURL: String
+    var name: String
     
     var body: some View {
         VStack(spacing: 16) {
@@ -82,7 +83,7 @@ struct LocationDetailView: View {
                 }
             }
         }
-        .navigationTitle("Chipotle")
+        .navigationTitle(name)
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden(true)
         .toolbar {
@@ -97,6 +98,6 @@ struct LocationDetailView: View {
 
 struct LocationDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        LocationDetailView(street: "Street 123", description: "description description description description", websiteURL: "")
+        LocationDetailView(street: "Street 123", description: "description description description description", websiteURL: "", name: "Chipotle")
     }
 }
